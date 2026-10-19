@@ -10,6 +10,10 @@ Event-driven order and payment microservices that stay consistent **without dist
 An order is accepted, a payment is attempted, and the order is either confirmed or compensated (cancelled) —
 all coordinated through Kafka using a **choreography saga** and the **transactional outbox** pattern.
 
+## Technical review
+
+Read the [engineering review](ENGINEERING_REVIEW.md) for implementation links, failure boundaries, concurrency tradeoffs and proposed validation checks. Payments use a simulator; production deployment and scale are not claimed.
+
 ## Architecture
 
 ```mermaid
